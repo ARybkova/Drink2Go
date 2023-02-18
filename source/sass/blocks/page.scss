@@ -1,0 +1,14 @@
+.page {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 20px;
+  // line-height: 32px;
+  font-weight: 400;
+  color: var(--base-black);
+  background-color: var(--base-white);
+}
+
+.page__body {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}

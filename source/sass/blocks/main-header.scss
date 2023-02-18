@@ -1,1 +1,85 @@
 /*Стили шпки*/
+.main-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-header__container {
+  display: grid;
+  grid-template-columns: 52px 1fr 60px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-header__logo {
+  display: flex;
+  padding: 12px 0 0 20px;
+}
+
+.main-header__logo-link {
+  width: 32px;
+  height: 36px;
+}
+
+.main-header__logo-image {
+  display: block;
+}
+
+.main-header__logo-heading {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .main-header__logo {
+    padding: 22px 0 22px;
+  }
+
+  .main-header__logo-link {
+    width: 82px;
+  }
+
+  .main-header__logo-image {
+    width: 82px;
+    height: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .main-header__logo {
+    gap: 20px;
+  }
+
+  .main-header__logo-link {
+    width: 170px;
+  }
+
+  .main-header__logo-image {
+    width: 170px;
+  }
+
+  .main-header__logo-heading {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 2px;
+    max-width: 130px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}

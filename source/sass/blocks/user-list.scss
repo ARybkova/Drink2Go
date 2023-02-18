@@ -1,0 +1,53 @@
+.user-list {
+  display: flex;
+  max-width: 180px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.user-list__link {
+  display: block;
+  padding: 22px;
+}
+
+.user-list__icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.user-list__link-text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    gap: 20px;
+    max-width: 300px;
+  }
+
+  .user-list__link {
+    display: flex;
+    gap: 8px;
+    padding: 32px 20px;
+    text-decoration: none;
+  }
+
+  .user-list__link-text {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--base-black);
+    text-transform: uppercase;
+  }
+}

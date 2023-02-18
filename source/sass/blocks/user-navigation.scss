@@ -1,0 +1,12 @@
+.user-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .user-navigation {
+    margin-left: 0;
+    order: 2;
+  }
+}

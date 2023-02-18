@@ -22,11 +22,11 @@
         </a>
         <h1 class="main-header__logo-heading">Интернет-магазин кофейных напитков</h1>
       </div>
-      <nav class="main-navigation">
-        <ul class="main-navigation__list user-list">
+      <div class="user-navigation">
+        <ul class="user-navigation__list user-list">
           <li class="user-list__item">
             <a class="user-list__link" href="#">
-              <svg class="user-list__icon user-list__icon--user" width="16" height="16" viewBox="0 0 16 16">
+              <svg class="user-list__icon" width="16" height="16" viewBox="0 0 16 16">
                 <use href="img/icons/stack.svg#user"></use>
               </svg>
               <span class="user-list__link-text user-list__link-text--user">Войти</span>
@@ -34,29 +34,32 @@
           </li>
           <li class="user-list__item">
             <a class="user-list__link" href="#">
-              <svg class="user-list__icon user-list__icon--cart" width="16" height="16" viewBox="0 0 16 16">
+              <svg class="user-list__icon" width="16" height="16" viewBox="0 0 16 16">
                 <use href="img/icons/stack.svg#cart"></use>
               </svg>
               <span class="user-list__link-text user-list__link-text--cart">Корзина</span>
             </a>
           </li>
         </ul>
+      </div>
 
-        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть
-            меню.</span></button>
+      <!-- <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button> -->
+
+      <nav class="main-navigation main-navigation--nojs">
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
 
         <ul class="main-navigation__list site-list">
-          <li class="site-list__item">
-            <a href="#" class="site-list__link">Главная</a>
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="#">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">Каталог</a>
+            <a class="site-list__link" href="#">Каталог</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">Доставка</a>
+            <a class="site-list__link" href="#">Доставка</a>
           </li>
           <li class="site-list__item">
-            <a href="#" class="site-list__link">О нас</a>
+            <a class="site-list__link" href="#">О нас</a>
           </li>
         </ul>
       </nav>
@@ -372,7 +375,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="card__buy">
                   <p class="card__price">225₽</p>
-                  <a class="card__button button button--primary button__cart" href="#">
+                  <a class="card__button button button--primary button--cart" href="#">
                     <svg class="button__cart-icon" width="20" height="16" viewBox="0 0 20 16">
                       <use href="img/icons/stack.svg#cart-add"></use>
                       </svg>
@@ -400,7 +403,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="card__buy">
                   <p class="card__price">225₽</p>
-                  <a class="card__button button button--primary button__cart" href="#">
+                  <a class="card__button button button--primary button--cart" href="#">
                     <svg class="button__cart-icon" width="20" height="16" viewBox="0 0 20 16">
                       <use href="img/icons/stack.svg#cart-add"></use>
                       </svg>
@@ -428,7 +431,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="card__buy">
                   <p class="card__price">225₽</p>
-                  <a class="card__button button button--primary button__cart" href="#">
+                  <a class="card__button button button--primary button--cart" href="#">
                     <svg class="button__cart-icon" width="20" height="16" viewBox="0 0 20 16">
                       <use href="img/icons/stack.svg#cart-add"></use>
                       </svg>
@@ -456,7 +459,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="card__buy">
                   <p class="card__price">225₽</p>
-                  <a class="card__button button button--primary button__cart" href="#">
+                  <a class="card__button button button--primary button--cart" href="#">
                     <svg class="button__cart-icon" width="20" height="16" viewBox="0 0 20 16">
                       <use href="img/icons/stack.svg#cart-add"></use>
                       </svg>
@@ -484,7 +487,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="card__buy">
                   <p class="card__price">225₽</p>
-                  <a class="card__button button button--primary button__cart" href="#">
+                  <a class="card__button button button--primary button--cart" href="#">
                     <svg class="button__cart-icon" width="20" height="16" viewBox="0 0 20 16">
                       <use href="img/icons/stack.svg#cart-add"></use>
                       </svg>
@@ -512,7 +515,7 @@
                 <p class="card__description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
                 <div class="card__buy">
                   <p class="card__price">225₽</p>
-                  <a class="card__button button button--primary button__cart" href="#">
+                  <a class="card__button button button--primary button--cart" href="#">
                     <svg class="button__cart-icon" width="20" height="16" viewBox="0 0 20 16">
                       <use href="img/icons/stack.svg#cart-add"></use>
                       </svg>
