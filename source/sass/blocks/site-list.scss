@@ -27,6 +27,10 @@
   &:last-child {
     border-bottom: 1px solid var(--base-secondary);
   }
+
+  &:active {
+    background-color: var(--base-secondary);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -46,6 +50,16 @@
 
     &:last-child {
       border-bottom: none;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--base-primary);
+    }
+
+    &:active {
+      background-color: var(--base-secondary);
+      color: var(--base-primary);
     }
   }
 }

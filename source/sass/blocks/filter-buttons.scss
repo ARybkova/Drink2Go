@@ -1,0 +1,25 @@
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24.5px;
+  max-width: 160px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-buttons {
+    flex-direction: row;
+    gap: 29.59px;
+    max-width: 400px;
+    margin-left: 179.53px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-buttons {
+    flex-direction: row;
+    gap: 18px;
+    max-width: 400px;
+    margin-left: 0;
+  }
+}

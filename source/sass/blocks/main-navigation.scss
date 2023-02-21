@@ -15,6 +15,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &:active {
+    background-color: var(--base-secondary);
+  }
 }
 
 .main-navigation--closed .main-navigation__toggle {

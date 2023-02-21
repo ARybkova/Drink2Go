@@ -1,0 +1,125 @@
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider__control .swiper-button-prev {
+  top: 22px;
+  left: -1px;
+  width: 20px;
+  padding: 328px 0 328px 2px;
+  background-color: transparent;
+  color: var(--base-primary);
+  border: 0;
+
+  &::after {
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, var(--base-white) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, var(--primary-opacity) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}
+
+.slider__control .swiper-button-next {
+  top: 22px;
+  right: -2px;
+  width: 20px;
+  padding: 328px 2px 328px 0;
+  background-color: transparent;
+  color: var(--base-primary);
+  border: 0;
+
+  &::after {
+    font-size: 19px;
+    font-weight: 700;
+  }
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(270deg, var(--base-white) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(270deg, var(--primary-opacity) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+}
+
+.slider__pagination {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__control .swiper-button-prev {
+    width: 80px;
+    padding-top: 320px;
+    padding-bottom: 320px;
+
+    &::after {
+      font-size: 18px;
+    }
+  }
+
+  .slider__control .swiper-button-next {
+    width: 80px;
+    padding-top: 320px;
+    padding-bottom: 320px;
+
+    &::after {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__control .swiper-button-prev {
+    padding-top: 357px;
+    padding-bottom: 357px;
+  }
+
+  .slider__control .swiper-button-next {
+    padding-top: 357px;
+    padding-bottom: 357px;
+  }
+
+  .slider .swiper-pagination {
+    bottom: 70px;
+  }
+
+  .slider__pagination {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .slider__pagination .swiper-pagination-bullet {
+    width: 62px;
+    height: 4px;
+    border-radius: 0;
+    background-color: var(--base-white);
+    opacity: 1;
+
+    &-active {
+      background-color: var(--base-primary);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--primary-opacity);
+    }
+  }
+}

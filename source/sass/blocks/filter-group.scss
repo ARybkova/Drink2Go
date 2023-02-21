@@ -1,0 +1,116 @@
+.filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &--price {
+    margin-bottom: 24.5px;
+  }
+
+  &--milk {
+    margin-bottom: 22px;
+  }
+}
+
+.filter-group__title {
+  margin: 0;
+  margin-bottom: 22.13px;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+
+  &--country {
+    padding-left: 2px;
+    margin-bottom: 22px;
+  }
+}
+
+.filter-group__range {
+  margin-bottom: 26px;
+}
+
+.filter-group__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.filter-group__item {
+  margin-bottom: 21.45px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter-group {
+    &--price {
+      margin-bottom: 0;
+      padding-right: 21.27px;
+    }
+
+    &--milk {
+      margin-bottom: 0;
+    }
+
+    &--country {
+      padding-left: 6px;
+    }
+  }
+
+  .filter-group__title {
+    margin-bottom: 20px;
+  }
+
+  .filter-group__range {
+    margin-bottom: 22px;
+    padding-left: 6.91px;
+  }
+
+  .filter-group__price {
+    padding-left: 6.91px;
+  }
+
+  .filter-group__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-group {
+    &--price {
+      margin-bottom: 30px;
+      padding-right: 0;
+    }
+
+    &--milk {
+      margin-bottom: 30px;
+    }
+
+    &--country {
+      padding-left: 0;
+    }
+  }
+
+  .filter-group__title {
+    &--milk {
+      margin-bottom: 22px;
+    }
+
+    &--country {
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  .filter-group__range {
+    margin-bottom: 23px;
+    padding-left: 0;
+  }
+
+  .filter-group__price {
+    padding-left: 0;
+  }
+}

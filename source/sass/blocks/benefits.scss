@@ -1,0 +1,155 @@
+.benefits {
+  padding: 50px 0 60px;
+}
+
+.benefits__container {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.benefits__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.benefits__item {
+  position: relative;
+  padding-top: 66px;
+
+  &--speed::before,
+  &--convenience::before,
+  &--cheerfulness::before,
+  &--ecology::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 52px;
+    height: 56px;
+    background-repeat: no-repeat;
+  }
+
+  &--speed::before {
+    background-image: url("../../img/speed.svg");
+  }
+
+  &--convenience::before {
+    background-image: url("../../img/convenience.svg");
+  }
+
+  &--cheerfulness::before {
+    transform: translateX(-42%);
+    background-image: url("../../img/cheerfulness.svg");
+  }
+
+  &--ecology::before {
+    transform: translateX(-45%);
+    background-image: url("../../img/ecology.svg");
+  }
+}
+
+.benefits__item-title {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.benefits__item-description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .benefits {
+    padding: 60px 0 100px;
+  }
+
+  .benefits__container {
+    max-width: 768px;
+  }
+
+  .benefits__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 50px;
+    text-align: start;
+  }
+
+  .benefits__item {
+    position: relative;
+    max-width: 339px;
+    padding-top: 0;
+    padding-left: 82px;
+
+    &--speed::before,
+    &--convenience::before,
+    &--cheerfulness::before,
+    &--ecology::before {
+      top: 4px;
+      left: 36px;
+    }
+
+    &--convenience::before {
+      top: 0;
+    }
+
+    &--cheerfulness::before {
+      top: 0;
+    }
+  }
+
+  .benefits__item-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .benefits__item-description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefits {
+    padding: 100px 0 119px;
+  }
+
+  .benefits__container {
+    max-width: 1440px;
+  }
+
+  .benefits__list {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .benefits__item {
+    position: relative;
+    max-width: 317px;
+    padding-top: 76px;
+    padding-left: 0;
+
+    &--speed::before,
+    &--convenience::before,
+    &--cheerfulness::before,
+    &--ecology::before {
+      top: 0;
+      left: 50%;
+    }
+  }
+}
