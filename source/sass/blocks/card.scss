@@ -100,6 +100,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .card {
+    &:hover,
+    &:focus {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+  }
+
   .card__link-image {
     padding-top: 47px;
     padding-right: 94px;

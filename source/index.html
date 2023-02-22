@@ -6,6 +6,7 @@
   <title>Bнтернет-магазина кофейных напитков Drink2Go</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -92,13 +93,14 @@
                 фермерским молоком — то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня</p>
               <div class="slider-item__buy">
                 <div class="slider-item__price">
-                  <span class="slider-item__price-old">295₽</span>
+                  <del class="slider-item__price-old">295₽</del>
                   <span class="slider-item__price-new">225₽</span>
                 </div>
                 <a class="slider-item__button button button--primary" href="#">Заказать</a>
               </div>
             </div>
           </li>
+
 
           <li class="slider__item slider-item slider-item--latte swiper-slide">
             <picture>
@@ -124,13 +126,14 @@
                 молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
               <div class="slider-item__buy">
                 <div class="slider-item__price">
-                  <span class="slider-item__price-old">285₽</span>
+                  <del class="slider-item__price-old">285₽</del>
                   <span class="slider-item__price-new">265₽</span>
                 </div>
                 <a class="slider-item__button button button--primary" href="#">Заказать</a>
               </div>
             </div>
           </li>
+
 
           <li class="slider__item slider-item slider-item--espresso swiper-slide">
             <picture>
@@ -156,7 +159,7 @@
                 тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
               <div class="slider-item__buy">
                 <div class="slider-item__price">
-                  <span class="slider-item__price-old">395₽</span>
+                  <del class="slider-item__price-old">395₽</del>
                   <span class="slider-item__price-new">375₽</span>
                 </div>
                 <a class="slider-item__button button button--primary" href="#">Заказать</a>
@@ -320,7 +323,7 @@
 
           <div class="catalog__filter-buttons filter-buttons">
             <button class="filter-buttons__button button button--primary button--filter" type="button">Применить фильтр</button>
-            <button class="filter-buttons__button button button--second button--reset" type="button">Сбросить фильтр</button>
+            <button class="filter-buttons__button button button--second button--reset" type="reset">Сбросить фильтр</button>
           </div>
         </form>
 
@@ -526,23 +529,9 @@
 
     <section class="map">
       <h2 class="visually-hidden">Адрес.</h2>
-      <picture>
-        <source type="image/webp" media="(min-width: 1440px)"
-          srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
-        <source type="image/webp"
-          srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+      <div class="map__wrapper" id="map">
 
-        <source media="(min-width: 1440px)"
-          srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)"
-          srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
-        <img class="map__image" src="img/map-mobile.jpg"
-          srcset="img/map-mobile@2x.png 2x" width="320" height="420"
-          alt="Местоположение магазина на карте: город Санкт-Петербург, набережная реки Карповки, дом 5.">
-      </picture>
-      <div class="map__wrapper" id="map"></div>
+      </div>
     </section>
   </main>
 
@@ -571,7 +560,7 @@
 
         <li class="social-list__item">
           <a class="social-list__link social-list__link--pinterest" href="#">
-            <svg class="social-list__icon" width="22" height="22" viewBox="0 0 22 22">
+            <svg class="social-list__icon social-list__icon--pinterest" width="22" height="22" viewBox="0 0 22 22">
               <use href="img/icons/stack.svg#pinterest"></use>
             </svg>
             <span class="visually-hidden">Pinterest.</span>
@@ -623,8 +612,8 @@
         </ul>
       </div>
 
-      <div class="navigation__wrapper">
-        <h2 class="navigation__title">Контакты</h2>
+      <div class="navigation__wrapper navigation__wrapper--contacts">
+        <h2 class="navigation__title navigation__title--contacts">Контакты</h2>
         <ul class="navigation__list">
           <li class="navigation__item navigation__item--address">
             <a class="navigation__link navigation__link--address" href="#">Санкт-Петербург, набережная реки Карповки, дом 5</a>
@@ -638,7 +627,7 @@
 
     <div class="main-footer__copyright copyright">
       <p class="copyright__text">Разработано в
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"> HTML academy
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
           <svg class="copyright__icon" width="12" height="16" viewBox="0 0 12 16">
             <use href="img/icons/stack.svg#logo-htmlacademy"></use>
           </svg>
@@ -647,7 +636,8 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="js/script.js" defer></script>
+  <script src="./vendor/leaflet/leaflet.js"></script>
+  <script type="module" src="js/script.js"></script>
 </body>
 
 </html>

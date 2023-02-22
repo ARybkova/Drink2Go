@@ -21,6 +21,15 @@
 .main-header__logo-link {
   width: 32px;
   height: 36px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .main-header__logo-image {
