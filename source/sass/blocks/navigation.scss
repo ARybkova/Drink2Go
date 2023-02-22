@@ -94,11 +94,11 @@
 
   &:hover,
   &:focus {
-    color: var(--primary-opacity);
+    color: var(--primary-lighter);
   }
 
   &:active {
-    color: var(--primary-lighter);
+    color: var(--primary-darker);
   }
 }
 
