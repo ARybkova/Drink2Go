@@ -1,3 +1,5 @@
+https://arybkova.github.io/Drink2Go/
+
 # Краткая инструкция по работе
 
 1. [Установить node.js](https://nodejs.org/download/release/latest-v16.x/). Сборка работает на 16 версии
